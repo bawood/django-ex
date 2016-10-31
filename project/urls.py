@@ -9,6 +9,7 @@ urlpatterns = [
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^$', index),
+    url(r'^polls/', include('polls.urls', namespace="polls")),
     url(r'^health$', health),
     url(r'^admin/', include(admin.site.urls)),
 ]
